@@ -1,0 +1,372 @@
+﻿*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+body {
+    background-image: url('city.png');
+    background-size: cover;
+    overflow: auto;
+}
+
+.header{
+    width:99.33%;
+    height:50px;
+    display:block;
+    background:rgba(0,0,0,0.7);
+    padding-left:10px;
+}
+
+.inbody {
+    width: 99.33%;
+    height: 652px;
+    display: block;
+    background: rgba(255, 255, 255,0.8);
+    padding-left: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 20px;
+    display: block;
+    background: rgba(0,0,0,0.7);
+    position:fixed;
+    bottom:0;
+}
+
+.inner_header{
+    width:100%;
+    height:100%;
+    display:block;
+    margin:0 auto;
+}
+
+.logo{
+    height:100%;
+    display:table;
+    float:left;
+}
+
+.logo h2{
+    display:table-cell;
+    height:100%;
+    vertical-align:middle;
+}
+
+.head1 {
+    height: 50px;
+    width:100%;
+    display: table;
+    font-size:23px;
+}
+
+#left {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.head1 span{
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    text-align:right;
+    padding-right:20px;
+}
+
+hr{
+    margin-right:20px;
+}
+
+.head2 {
+    height: 50px;
+    width: 100%;
+    display: table;
+    font-size: 15px;
+}
+
+.head3 {
+    height: 50px;
+    width: 100%;
+    display: table;
+    font-size: 15px;
+}
+
+.number{
+    width:5%;
+    border-radius:5px;
+    border:1px solid;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+}
+
+.input {
+    width: 600px;
+    height:30px;
+    border-radius: 5px;
+    border: 0.5px solid;
+    padding-left:5px;
+    margin: 5px auto;
+}
+
+.reset{
+    background-color:yellow;
+    width:100px;
+    margin-right:405px;
+    font-size:20px;
+    border-radius:5px;
+}
+
+.reset:hover{
+    background-color:darkorange;
+}
+
+.tambah {
+    width: 100px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.tambah:hover{
+    background-color: greenyellow;
+}
+
+.button-edit:hover {
+    background-color: darkgreen;
+}
+
+.button-delete:hover {
+    background-color: darkred;
+}
+
+.modal{
+    position:fixed;
+    z-index:1;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:none;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.topContent{
+    background:coral;
+    padding:15px;
+}
+
+.midContent{
+    margin:5px auto;
+}
+
+.botContent{
+    padding-left:260px;
+}
+
+.content {
+    background-color: white;
+    margin: 15% auto;
+    width: 400px;
+    height: auto;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+    border: 1px black solid;
+    border-color:darkorange;
+}
+
+.close{
+    color:lightgrey;
+    float:right;
+    font-size:30px;
+}
+
+.close:hover,.close:focus{
+    color:black;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+.modalAddFeedback {
+    position: fixed;
+    z-index: 1;
+    left: 100px;
+    bottom:10%;
+    margin-top:50%;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+.feedback {
+    background-color: white;
+    margin: 15% auto;
+    width: 300px;
+    height: 70px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5);
+}
+
+.topAddFeedback {
+    background-color: green;
+    color: white;
+    padding: 3px;
+}
+
+.midAddFeedback{
+    margin:5px auto;
+}
+
+.modalUnableFeedback {
+    position: fixed;
+    z-index: 1;
+    left: 100px;
+    bottom: 10%;
+    margin-top: 50%;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+
+
+.topUnableFeedback {
+    background-color: yellow;
+    color: white;
+    padding: 3px;
+}
+
+.midUnableFeedback {
+    margin: 5px auto;
+}
+
+.modalDeleteFeedback {
+    position: fixed;
+    z-index: 1;
+    left: 100px;
+    bottom: 10%;
+    margin-top: 50%;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.topDeleteFeedback {
+    background-color: red;
+    color: white;
+    padding: 3px;
+}
+
+.midDeleteFeedback {
+    margin: 5px auto;
+}
+
+.modalUpdateFeedback {
+    position: fixed;
+    z-index: 1;
+    left: 100px;
+    bottom: 10%;
+    margin-top: 50%;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+.topUpdateFeedback {
+    background-color: deepskyblue;
+    color:white;
+    padding: 3px;
+}
+
+.midUpdateFeedback {
+    margin: 5px auto;
+}
+
+#cancel-btn{
+    margin:2px;
+    border-color:red;
+    color:azure;
+    width:50px;
+    height:30px;
+    background-color: red;
+    border-radius:5px 5px 5px 5px;
+}
+
+#save-btn {
+    margin: 2px;
+    background-color: greenyellow;
+    border-color: greenyellow;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.editNIM {
+    z-index: -1;
+    background-color: lightgrey;
+    border-radius: 5px 5px 5px 5px;
+    width: 300px;
+    height: 25px;
+    padding-left:5px;
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.editnama {
+    border-radius: 5px 5px 5px 5px;
+    width: 300px;
+    height: 25px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.editalamat {
+    border-radius: 5px 5px 5px 5px;
+    width: 300px;
+    height: 25px;
+    padding-left: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+.table tbody{
+    overflow:auto;
+}
+
+@media only screen and (min-width: 360px){
+    .input {
+        width: 360px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0.5px solid;
+        padding-left: 5px;
+        margin: 5px auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .input {
+        width: 600px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0.5px solid;
+        padding-left: 5px;
+        margin: 5px auto;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .input {
+        width: 600px;
+        height: 30px;
+        border-radius: 5px;
+        border: 0.5px solid;
+        padding-left: 5px;
+        margin: 5px auto;
+    }
+}

@@ -1,0 +1,27 @@
+[
+	{
+		"NIM": "00000011111",
+		"nama": "Andi",
+		"alamat": "jl.ahmad 1 no.15,Tangerang"
+	},
+	{
+		"NIM": "00000022222",
+		"nama": "Budi",
+		"alamat": "jl.bahmad 2 no.16,Tangerang"
+	},
+	{
+		"NIM": "00000033333",
+		"nama": "Charlie",
+		"alamat": "jl.cahmad 3 no.17,Tangerang"
+	},
+	{
+		"NIM": "00000044444",
+		"nama": "Delta",
+		"alamat": "jl.dahmad 4 no.18,Tangerang"
+	},
+	{
+		"NIM": "00000055555",
+		"nama": "Eddie",
+		"alamat": "jl.ehmad 5 no.19,Tangerang"
+	}
+]

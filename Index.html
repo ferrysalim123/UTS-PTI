@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo">
+                <h2 style="font-family:'Helvetica Neue LT Std'"><span style="color:forestgreen">DATA</span><span style="color:red"> MAHASISWA</span><span style="color:blue"> ||</span></h2>
+            </div>
+        </div>
+    </div>
+    <div class="inbody">
+        <div class="head1">
+            <p style="font-family:'Bernard MT'" id="left">Hello, 世界 !</p>
+            <span style="font-family:'Bernard MT'" id="right"> 020517</span>
+        </div>
+        <hr>
+        <div class="head2">
+            <p id="left">Usaha keras tidak akan menghianati hasil,tapi bisa menghianati impian</p>
+        </div>
+        <hr>
+        <div class="pengisian">
+            <form onsubmit="event.preventDefault(); onFormSubmit();">
+                <table>
+                    <tr>
+                        <th><label>NIM</label></th>
+                        <th><input type="text" class="input" id="NIM"></th>
+                    </tr>
+
+                    <tr>
+                        <th><label>Nama</label></th>
+                        <th><input type="text" class="input" id="nama"></th>
+                    </tr>
+
+                    <tr>
+                        <th><label>Alamat</label></th>
+                        <th><input type="text" class="input" id="alamat"></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th><input type="reset" value="Reset" class="reset" id="reset"><input type="submit" value="Tambah" class="tambah" id="tambah"></th>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <hr>
+        <div class="head3">
+            <p id="left">Show <input type="number" value="10" class="number"> entries</p>
+        </div>
+        <hr>
+        <div class="showTable">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <td style="width:100px; font-weight:800;">NIM</td>
+                        <td style="width:150px; font-weight:800;">Nama</td>
+                        <td style="width:300px; font-weight:800;">Alamat</td>
+                        <td colspan="2" style="width:200px; font-weight:800;">Pengaturan</td>
+                    </tr>
+                </thead>
+                <tbody id="tableRows">
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+    <div id="modal" class="modal">
+        <form>
+            <div id="content " class="content">
+                <div class="topContent">
+                    <span id="close-btn" class="close" onclick="closemodal()">&times;</span>
+                    <h2>Edit</h2>
+                </div>
+                <div class="midContent">
+                    <table>
+                        <tr>
+                            <th><label>NIM</label></th>
+                            <th><input type="text" class="editNIM" id="editNIM" readonly></th>
+                        </tr>
+
+                        <tr>
+                            <th><label>Nama</label></th>
+                            <th><input type="text" class="editnama" id="editnama"></th>
+                        </tr>
+
+                        <tr>
+                            <th><label>Alamat</label></th>
+                            <th><input type="text" class="editalamat" id="editalamat"></th>
+                        </tr>
+                    </table>
+
+                </div>
+                <hr style="width:99%">
+                <div class="botContent">
+
+                    <input type="reset" value="Cancel" class="editreset" id="cancel-btn" onclick="closemodal()"><button id="save-btn" class="ubahEdit" onclick="onFormSubmit()">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="Addmodal" class="modalAddFeedback">
+        <div id="addFeedback " class="feedback">
+            <div class="topAddFeedback">
+                <span id="close-btn" class="close" onclick="closeAddmodal()">&times;</span>
+                <h2>Added!</h2>
+            </div>
+            <div class="midFeedback">
+                <p>Mahasiswa Baru Telah DiTambahkan.</p>
+            </div>
+        </div>
+    </div>
+    <div id="Unablemodal" class="modalUnableFeedback">
+        <div id="UnableFeedback " class="feedback">
+            <div class="topUnableFeedback">
+                <span id="close-btn" class="close" onclick="closeUnablemodal()">&times;</span>
+                <h2>Warning!</h2>
+            </div>
+            <div class="midFeedback">
+                <p>Tidak Dapat Menambah Mahasiswa.</p>
+            </div>
+        </div>
+    </div>
+    <div id="Deletemodal" class="modalDeleteFeedback">
+        <div id="DeleteFeedback " class="feedback">
+            <div class="topDeleteFeedback">
+                <span id="close-btn" class="close" onclick="closeDeletemodal()">&times;</span>
+                <h2>Deleted!</h2>
+            </div>
+            <div class="midFeedback">
+                <p>Data Mahasiswa Berhasil Dihapus.</p>
+            </div>
+        </div>
+    </div>
+    <div id="Updatemodal" class="modalUpdateFeedback">
+        <div id="UpdateFeedback " class="feedback">
+            <div class="topUpdateFeedback">
+                <span id="close-btn" class="close" onclick="closeUpdatemodal()">&times;</span>
+                <h2>Updated!</h2>
+            </div>
+            <div class="midFeedback">
+                <p>Data Mahasiswa Berhasil Di Perbaharui.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+</body>
+</html>
+<script src="script.js"></script>
